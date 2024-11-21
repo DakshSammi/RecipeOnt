@@ -1,0 +1,1836 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www./"
+     xml:base="http://www./"
+     xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sioc="http://rdfs.org/sioc/ns#link"
+     xmlns:schema="http://schema.org/"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#"
+     xmlns:foodontology="https://cosylab.iiitd.edu.in/foodontology/">
+    <owl:Ontology rdf:about="https://cosylab.iiitd.edu.in/foodontology/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/url -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/url">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NaturalSource"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NaturalSourceURL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/hasNutritionProfile -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/hasNutritionProfile">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#hasFlavorMolecule -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#hasFlavorMolecule">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NaturalSource"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#dct:identifier -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#dct:identifier">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeURL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#dct:source -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#dct:source">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NaturalSource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#om:hasPhenomenon -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#om:hasPhenomenon">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#om:hasUnit -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#om:hasUnit"/>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#om:hasValue -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#om:hasValue">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Temperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:additionalType -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:additionalType"/>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:amount -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:amount"/>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:category -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:category">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#IngredientCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:conatinedIn -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:conatinedIn">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Country"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:containedIn -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:containedIn">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Region"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Continent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:cookTime -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:cookTime">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingTIme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:cookingMethod -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:cookingMethod">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:countryOfOrigin -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:countryOfOrigin">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:description -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:description">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Description"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:nutrition -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:nutrition">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:prepTime -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:prepTime"/>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:recipeCategory -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:recipeCategory">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:recipeInstructions -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:recipeInstructions">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Description"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:recipeYield -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:recipeYield">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Servings"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:tool -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:tool"/>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:totalTime -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:totalTime"/>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:unitText -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:unitText">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:url -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:url">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#IngredientURL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema:value -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema:value">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Quantity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#schema: tool -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#schema: tool">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Utensils"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#sioc:link -->
+
+    <owl:ObjectProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#sioc:link">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+        <rdfs:range rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeImageURL"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/ingredientID -->
+
+    <owl:DatatypeProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/ingredientID">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">499.9575976896389</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">579.6338201007981</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/recipeID -->
+
+    <owl:DatatypeProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/recipeID">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">229.75238585471533</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">499.7039091445454</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#flavormoleculeID -->
+
+    <owl:DatatypeProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#flavormoleculeID">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">140.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">350.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#nutritionprofileID -->
+
+    <owl:DatatypeProperty rdf:about="https://cosylab.iiitd.edu.in/foodontology/#nutritionprofileID">
+        <rdfs:domain rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">580.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Sub-region -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/Sub-region">
+        <owl:equivalentClass rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Country"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">750.4357092669669</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">430.2627273505756</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#BiologicalProcess -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#BiologicalProcess">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingProcess"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">160.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Calories -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Calories">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-10.328763829289983</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">760.1205540782344</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Carbohydrate -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Carbohydrate">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">140.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">780.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#ChemicalProcess -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#ChemicalProcess">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingProcess"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">340.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Continent -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Continent">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">620.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">400.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#CookingProcess -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#CookingProcess">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#CookingTIme -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#CookingTIme">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#TotalTime"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">739.6526802327068</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">380.3490782044827</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Utensils"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">499.9569209440142</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">39.64972682639245</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#CoolingProcess -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#CoolingProcess">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingProcess"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Country -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Country">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">770.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">490.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#CuttingTools -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#CuttingTools">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">159.95100899543309</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">219.74690961068484</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Description -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Description">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">360.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">550.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#EatingUtensils -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#EatingUtensils">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Utensils"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">490.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Energy -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Energy">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-30.264827093159596</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">690.4434115917736</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeName -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeName">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">540.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-30.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">410.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#FlavorProfile -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#FlavorProfile">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.4973290016239833</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">270.1442918571663</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingProcess"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Ingredient -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Ingredient">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#dct:source"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NaturalSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#om:hasPhenomenon"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#om:hasValue"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Temperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:category"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#IngredientCategory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:unitText"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:url"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#IngredientURL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:value"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Quantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">360.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">620.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#IngredientCategory -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#IngredientCategory">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">690.3814997514766</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">580.2653240195158</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#IngredientURL -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#IngredientURL">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">709.9708469244499</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">670.0597039664273</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#LactoVegetarian -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#LactoVegetarian">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">410.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">370.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Lipid -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Lipid">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">80.02159997596155</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">799.7395958966365</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#MeasuringTools -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#MeasuringTools">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">290.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#MechanicalProcess -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#MechanicalProcess">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingProcess"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">140.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">160.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#MixingTools -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#MixingTools">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">390.15414780612815</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.09627430621708</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#NaturalSource -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#NaturalSource">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#hasFlavorMolecule"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">800.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#NaturalSourceURL -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#NaturalSourceURL">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">549.864170242821</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">800.3770802461141</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">650.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#OvoLactoVegetarian -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#OvoLactoVegetarian">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">340.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">230.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#OvoVegetarian -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#OvoVegetarian">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">520.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">280.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Pescetarian -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Pescetarian">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">310.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#PreparationTime -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#PreparationTime">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#TotalTime"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">719.6213660826357</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">289.5258533445424</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Utensils"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">390.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Protein -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Protein">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-20.319629308775916</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">619.7573227699875</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Quantity -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Quantity">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">230.414239273186</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">689.5698166026273</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Recipe -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Recipe">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#dct:identifier"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeURL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:cookTime"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingTIme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:cookingMethod"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:nutrition"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:recipeCategory"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:recipeYield"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Servings"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema: tool"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Utensils"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#sioc:link"/>
+                <owl:allValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeImageURL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">340.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">430.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">309.8524609221148</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.10364069401106</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#RecipeImageURL -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#RecipeImageURL">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">620.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">510.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#RecipeURL -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#RecipeURL">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">530.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">550.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Region -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Region">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">640.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">460.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#ServingUtensils -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#ServingUtensils">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Utensils"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">740.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">140.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Servings -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Servings">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">340.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#SpecializedCookingTools -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#SpecializedCookingTools">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">690.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#State -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#State">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">429.889889134261</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">730.4201665866574</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#StoringUtensils -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#StoringUtensils">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Utensils"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">720.2653590906093</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">49.773199595933136</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Temperature -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Temperature">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">630.230782710964</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">759.7724327507138</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#TotalTime -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#TotalTime">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">540.3108442277425</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">340.0575826407056</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Unit -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Unit">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">570.0864483432474</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">700.0286036291849</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Utensils -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Utensils">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">650.0</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.0</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/#Vegan -->
+
+    <owl:Class rdf:about="https://cosylab.iiitd.edu.in/foodontology/#Vegan">
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Bake -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Bake">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Barbecue -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Barbecue">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Blanch -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Blanch">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Boil -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Boil">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Braise -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Braise">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Broil -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Broil">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Bubble -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Bubble">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+        <owl:sameAs rdf:resource="https://cosylab.iiitd.edu.in/foodontology/Bubbling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Bubbling -->
+
+    <rdf:Description rdf:about="https://cosylab.iiitd.edu.in/foodontology/Bubbling"/>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Bubbling -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Bubbling">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Burn -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Burn">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Caramelize -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Caramelize">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Char -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Char">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Condensed -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Condensed">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Cook -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Cook">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/CrockPot -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/CrockPot">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/DeepFry -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/DeepFry">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Defrost -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Defrost">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Dry -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Dry">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Evaporate -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Evaporate">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+        <owl:sameAs rdf:resource="https://cosylab.iiitd.edu.in/foodontology/Evaporated"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Evaporated -->
+
+    <rdf:Description rdf:about="https://cosylab.iiitd.edu.in/foodontology/Evaporated"/>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Evaporated -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Evaporated">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Foam -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Foam">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Heat -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Heat">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Melt -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Melt">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Overcook -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Overcook">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Pan-fry -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Pan-fry">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Pans -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Pans">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Parboil -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Parboil">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Poach -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Poach">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Pop -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Pop">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Pots -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Pots">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Pre-heat -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Pre-heat">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+        <owl:sameAs rdf:resource="https://cosylab.iiitd.edu.in/foodontology/Preheat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Preheat -->
+
+    <rdf:Description rdf:about="https://cosylab.iiitd.edu.in/foodontology/Preheat"/>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Preheat -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Preheat">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Process -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Process">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Reduce -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Reduce">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Reheat -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Reheat">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Roast -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Roast">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Saute -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Saute">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Scald -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Scald">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Scorching -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Scorching">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Sear -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Sear">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Simmer -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Simmer">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Sizzle -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Sizzle">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Smoke -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Smoke">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+        <owl:sameAs rdf:resource="https://cosylab.iiitd.edu.in/foodontology/Smoking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Smoking -->
+
+    <rdf:Description rdf:about="https://cosylab.iiitd.edu.in/foodontology/Smoking"/>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Smoking -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Smoking">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Soften -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Soften">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Splutter -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Splutter">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Steam -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Steam">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Sterilize -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Sterilize">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Stew -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Stew">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Stir-fry -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Stir-fry">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Sweat -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Sweat">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Thaw -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Thaw">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Toast -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Toast">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Warm -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Warm">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Wilt -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Wilt">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Wok -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Wok">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://cosylab.iiitd.edu.in/foodontology/Wrapping_Supplies -->
+
+    <owl:NamedIndividual rdf:about="https://cosylab.iiitd.edu.in/foodontology/Wrapping_Supplies">
+        <rdf:type rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#StoringUtensils"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">129.583644525798</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0316965342861</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">590.0</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">450.0</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">580.0</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">440.0</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#hasFlavorMolecule"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NaturalSource"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#dct:identifier"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeURL"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#dct:source"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NaturalSource"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#om:hasPhenomenon"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#State"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#om:hasValue"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Temperature"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:category"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#IngredientCategory"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:cookTime"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingTIme"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:cookingMethod"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#CookingProcess"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:description"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Description"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:nutrition"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:recipeCategory"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:recipeYield"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Servings"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:unitText"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Unit"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:url"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#IngredientURL"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema:value"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Quantity"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Ingredient"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#schema: tool"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Utensils"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#sioc:link"/>
+        <owl:someValuesFrom rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#RecipeImageURL"/>
+        <rdfs:subClassOf rdf:resource="https://cosylab.iiitd.edu.in/foodontology/#Recipe"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
